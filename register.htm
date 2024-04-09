@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - ShopOnline</title>
+    <script type="text/javascript" src="./register.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <div class="outerWrapper">
+      <section class="authWrapper">
+        <div class="animationWrapper">
+          <h2>SHOP</h2>
+          <p>Online</p>
+
+          <dotlottie-player
+            src="https://lottie.host/ba098066-15c5-477b-bae6-4898c4f97c44/mpGrCMgOp6.json"
+            background="transparent"
+            speed="1"
+            style="width: 300px; height: 300px; margin-top: 20px"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+
+        <div class="formWrapper">
+          <h2 class="headings">Create an account</h2>
+          <p class="nav-link">
+            Already have an account? <a href="./login.htm">Login</a>
+          </p>
+          <section>
+            <div class="form-group">
+              <label for="firstName">First Name:*</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Enter first name."
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name:*</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Enter last name."
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:*</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter email."
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password:*</label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter password."
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password:*</label>
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Re-enter password."
+              />
+            </div>
+
+            <div class="action-buttons">
+              <button class="submitButton" onclick="register();">
+                Register
+              </button>
+              <button class="resetButton" onclick="clearForm();">Reset</button>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+
+    <div class="snackbar-container">
+      <div class="snackbar">
+        <p id="registrationMessage"></p>
+      </div>
+    </div>
+  </body>
+</html>

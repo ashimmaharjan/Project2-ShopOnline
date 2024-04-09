@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bidding - ShopOnline</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="./session.js"></script>
+    <script src="./bidding.js"></script>
+    <script>
+      fetchItems();
+    </script>
+  </head>
+  <body onload="checkSession()">
+    <section class="dashboard-wrapper">
+      <div class="nav-bar">
+        <p onclick="redirectToHome()">ShopOnline</p>
+        <div class="nav-links-container">
+          <a href="./home.htm">Home</a>
+          <a href="./listing.htm">Listing</a>
+          <a href="./bidding.htm">Bidding</a>
+          <a href="./maintenance.htm">Maintenance</a>
+          <button class="logoutButton" onclick="logout()">Logout</button>
+        </div>
+      </div>
+
+      <div class="formWrapper">
+        <div class="snackbar-container-2">
+          <div class="snackbar">
+            <p id="listingMessage"></p>
+          </div>
+        </div>
+
+        <h2 class="headings">Place a bid.</h2>
+        <p class="nav-link">
+          Here is the list of all auction items. Data is updated every 5
+          seconds.
+        </p>
+
+        <!-- Add a div to hold the list of items -->
+        <div id="itemList" class="item-list"></div>
+      </div>
+    </section>
+  </body>
+</html>

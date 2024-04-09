@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Listing - ShopOnline</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+    <script src="./session.js"></script>
+    <script src="./listing.js"></script>
+  </head>
+  <body onload="checkSession(); fetchCategories();">
+    <section class="dashboard-wrapper">
+      <div class="nav-bar">
+        <p onclick="redirectToHome()">ShopOnline</p>
+        <div class="nav-links-container">
+          <a href="./home.htm">Home</a>
+          <a href="./listing.htm">Listing</a>
+          <a href="./bidding.htm">Bidding</a>
+          <a href="./maintenance.htm">Maintenance</a>
+          <button class="logoutButton" onclick="logout()">Logout</button>
+        </div>
+      </div>
+
+      <div class="formWrapper">
+        <div class="snackbar-container-2">
+          <div class="snackbar">
+            <p id="listingMessage"></p>
+          </div>
+        </div>
+
+        <h2 class="headings">Create a listing.</h2>
+        <p class="nav-link">Please enter listing details as follows.</p>
+        <section>
+          <div class="form-group">
+            <label for="itemName">Item Name:*</label>
+            <input
+              type="text"
+              id="itemName"
+              name="itemName"
+              placeholder="Enter item name."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="description">Category:*</label>
+            <select name="category" id="category"></select>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Description:*</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              placeholder="Enter details about the item."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="startPrice">Start Price:*</label>
+            <input
+              type="number"
+              id="startPrice"
+              name="startPrice"
+              min="0"
+              step="0.01"
+              value="0"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="reservePrice">Reserve Price:*</label>
+            <input
+              type="number"
+              id="reservePrice"
+              name="reservePrice"
+              min="0"
+              step="0.01"
+              placeholder="Enter reserve price."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="buyPrice">Buy It Now Price:*</label>
+            <input
+              type="number"
+              id="buyItNowPrice"
+              name="buyItNowPrice"
+              min="0"
+              step="0.01"
+              placeholder="Enter buy now price."
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="duration">Duration:*</label>
+            <div class="duration-wrapper">
+              <input
+                type="number"
+                min="0"
+                max="10"
+                step="1"
+                id="day"
+                name="day"
+                placeholder="Day"
+              />
+
+              <input
+                type="number"
+                min="0"
+                max="23"
+                step="1"
+                id="hour"
+                name="hour"
+                placeholder="Hour"
+              />
+
+              <input
+                type="number"
+                min="0"
+                max="59"
+                step="1"
+                id="min"
+                name="min"
+                placeholder="Min"
+              />
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="submitButton" onclick="submitListing()">
+              Submit
+            </button>
+            <button class="resetButton" onclick="clearListingForm()">
+              Reset
+            </button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </body>
+</html>
