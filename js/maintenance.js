@@ -1,7 +1,7 @@
 // Function to process auction items
 function processAuctionItems() {
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "maintenance.php", true);
+  xhr.open("POST", "php/maintenance.php", true);
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -34,7 +34,7 @@ function generateReport() {
       xsl.send();
     }
   };
-  xhr.open("POST", "maintenance.php", true);
+  xhr.open("POST", "php/maintenance.php", true);
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.send("action=generateReport");
 }

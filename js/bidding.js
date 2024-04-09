@@ -1,7 +1,7 @@
 // Function to periodically retrieve all items from the server
 function fetchItems() {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "bidding.php", true); // Send request to bidding.php
+  xhr.open("GET", "php/bidding.php", true);
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -28,7 +28,7 @@ function placeBid(itemNumber) {
 
   var bidderID = sessionStorage.getItem("customerID");
   var xhr = new XMLHttpRequest();
-  xhr.open("POST", "bidding.php", true); // Send request to bidding.php
+  xhr.open("POST", "php/bidding.php", true); // Send request to bidding.php
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
@@ -51,7 +51,7 @@ function placeBid(itemNumber) {
 function buyItem(itemNumber) {
   var xhr = new XMLHttpRequest();
   var bidderID = sessionStorage.getItem("customerID");
-  xhr.open("POST", "bidding.php", true); // Send request to bidding.php
+  xhr.open("POST", "php/bidding.php", true); // Send request to bidding.php
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {

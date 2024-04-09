@@ -3,7 +3,7 @@
 header('Content-Type: text/xml');
 
 // Load XML file
-$xmlFile = '../../data/auction.xml';
+$xmlFile = '../../../data/auction.xml';
 $doc = new DOMDocument();
 $doc->preserveWhiteSpace = false;
 $doc->load($xmlFile);

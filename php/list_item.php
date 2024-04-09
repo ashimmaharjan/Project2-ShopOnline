@@ -60,7 +60,7 @@ if (
         $status = "in_progress";
 
         // Load existing XML file or create new if doesn't exist
-        $xmlfile = '../../data/auction.xml';
+        $xmlFile = '../../../data/auction.xml';
         $doc = new DomDocument();
 
         if (!file_exists($xmlfile)) {

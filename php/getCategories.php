@@ -2,7 +2,7 @@
 
 header('Content-Type: text/xml');
 
-$xmlFile = '../../data/auction.xml';
+$xmlFile = '../../../data/auction.xml';
 $categories = array();
 
 if (file_exists($xmlFile)) {

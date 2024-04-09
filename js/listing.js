@@ -27,7 +27,7 @@ function submitListing() {
     !itemName ||
     !category ||
     !description ||
-    !startPrice ||
+    startPrice === null ||
     !reservePrice ||
     !buyItNowPrice ||
     !day ||
@@ -47,7 +47,7 @@ function submitListing() {
   }
 
   // Send the form data to the server
-  xhr.open("POST", "list_item.php", true);
+  xhr.open("POST", "php/list_item.php", true);
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
   xhr.onreadystatechange = handleListingResponse;
@@ -110,7 +110,7 @@ function clearListingForm() {
 
 function fetchCategories() {
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "getCategories.php", true);
+  xhr.open("GET", "php/getCategories.php", true);
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       var categories = JSON.parse(xhr.responseText);

@@ -9,7 +9,7 @@ function login() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
 
-  xhr.open("POST", "login.php", true);
+  xhr.open("POST", "php/login.php", true);
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
   xhr.onreadystatechange = testLogin;

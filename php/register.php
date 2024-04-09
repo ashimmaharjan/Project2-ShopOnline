@@ -40,7 +40,7 @@ if (isset($_GET["firstName"]) && isset($_GET["lastName"]) && isset($_GET["email"
         echo $errMsg;
     } else {
 
-        $xmlfile = '../../data/customer.xml';
+        $xmlfile = '../../../data/customer.xml';
 
         $doc = new DomDocument();
 

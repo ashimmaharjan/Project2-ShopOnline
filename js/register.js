@@ -14,7 +14,7 @@ function register() {
 
   xhr.open(
     "GET",
-    "register.php?firstName=" +
+    "php/register.php?firstName=" +
       encodeURIComponent(firstName) +
       "&lastName=" +
       encodeURIComponent(lastName) +

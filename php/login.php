@@ -8,7 +8,7 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
         echo "Please enter both email and password.";
     } else {
         // Load the XML document
-        $xmlfile = '../../data/customer.xml';
+        $xmlfile = '../../../data/customer.xml';
         $doc = new DomDocument();
         if (file_exists($xmlfile)) {
             $doc->load($xmlfile);
