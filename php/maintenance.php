@@ -24,6 +24,8 @@ function processAuctionItems()
     global $doc;
     global $xmlFile;
     $items = $doc->getElementsByTagName('item');
+    $itemsProcessed = false; // Flag to track if any items were processed
+
     foreach ($items as $item) {
         $status = $item->getElementsByTagName('Status')->item(0)->nodeValue;
         if ($status === "in_progress") {
@@ -46,8 +48,14 @@ function processAuctionItems()
                     $statusNode = $item->getElementsByTagName('Status')->item(0);
                     $statusNode->nodeValue = "sold";
                 }
+                $itemsProcessed = true;
             }
         }
+    }
+
+    if (!$itemsProcessed) {
+        echo "No items need processing at the moment.";
+        return;
     }
 
     $doc->formatOutput = true;
