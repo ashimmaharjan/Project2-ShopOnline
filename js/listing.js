@@ -46,7 +46,6 @@ function submitListing() {
     return;
   }
 
-  // Send the form data to the server
   xhr.open("POST", "php/list_item.php", true);
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
@@ -86,6 +85,7 @@ function handleListingResponse() {
         clearListingForm();
       } else {
         snackbar.style.backgroundColor = "red";
+        window.scrollTo(0, 0);
       }
     } else {
       document.querySelector(".snackbar-container-2").style.display = "none";
@@ -104,7 +104,6 @@ function clearListingForm() {
   document.getElementById("hour").value = "";
   document.getElementById("min").value = "";
 
-  // Scroll to the top of the page
   window.scrollTo({ top: 0, behavior: "smooth" });
 }
 

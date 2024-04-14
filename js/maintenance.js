@@ -5,7 +5,7 @@ function processAuctionItems() {
   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
-      alert(xhr.responseText); // Display response message
+      alert(xhr.responseText);
     }
   };
   xhr.send("action=processAuctionItems");

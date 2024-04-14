@@ -37,7 +37,6 @@ if (
         $errMsg .= "Please fill out all fields. ";
     }
 
-    // Additional validation logic goes here...
     if ($startPrice > $reservePrice) {
         $errMsg .= "Start price cannot be greater than reserve price. ";
     }
@@ -63,12 +62,12 @@ if (
         $xmlFile = '../../../data/auction.xml';
         $doc = new DomDocument();
 
-        if (!file_exists($xmlfile)) {
+        if (!file_exists($xmlFile)) {
             $items = $doc->createElement('items');
             $doc->appendChild($items);
         } else {
             $doc->preserveWhiteSpace = FALSE;
-            $doc->load($xmlfile);
+            $doc->load($xmlFile);
         }
 
         $items = $doc->getElementsByTagName('items')->item(0);
@@ -163,10 +162,8 @@ if (
         $bidPriceValue = $doc->createTextNode($startPrice);
         $bidPriceNode->appendChild($bidPriceValue);
 
-        //save the xml file
         $doc->formatOutput = true;
-        $doc->save($xmlfile);
-        // Return success message
+        $doc->save($xmlFile);
         echo "Thank you! Your item has been listed in ShopOnline. The item number is $itemNumber, and the bidding starts now: $startTime on $startDate.";
     }
 } else {

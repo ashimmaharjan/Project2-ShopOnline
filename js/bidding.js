@@ -23,7 +23,7 @@ function placeBid(itemNumber) {
   // Validate if new bid price is a valid number or float
   if (!/^\d*\.?\d*$/.test(newBidPrice)) {
     alert("Please enter a valid number for the new bid price.");
-    return; // Exit function if new bid price is not a valid number or float
+    return;
   }
 
   var bidderID = sessionStorage.getItem("customerID");
@@ -33,7 +33,7 @@ function placeBid(itemNumber) {
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       alert(xhr.responseText);
-      fetchItems(); // Update items after placing bid
+      fetchItems();
     }
   };
   xhr.send(
@@ -56,7 +56,7 @@ function buyItem(itemNumber) {
   xhr.onreadystatechange = function () {
     if (xhr.readyState == 4 && xhr.status == 200) {
       alert(xhr.responseText);
-      fetchItems(); // Update items after buying item
+      fetchItems();
     }
   };
   xhr.send(
@@ -93,7 +93,7 @@ function formatTimeLeft(timeLeft) {
 // Function to update the UI with the retrieved items
 function updateUI(items) {
   var itemList = document.getElementById("itemList");
-  itemList.innerHTML = ""; // Clear existing items
+  itemList.innerHTML = "";
   items.forEach(function (item) {
     var itemContainer = document.createElement("div");
     itemContainer.classList.add("bidItemCard");

@@ -2,7 +2,6 @@
 
 header('Content-Type: text/xml');
 
-// Load XML file
 $xmlFile = '../../../data/auction.xml';
 $doc = new DOMDocument();
 $doc->preserveWhiteSpace = false;
@@ -11,7 +10,6 @@ date_default_timezone_set('Australia/Sydney');
 
 // Handle fetch, place bid, and buy operations based on the request type
 if ($_SERVER["REQUEST_METHOD"] === "GET") {
-    // Handle fetch operation
     fetchItems();
 } elseif ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["action"])) {
     $action = $_POST["action"];

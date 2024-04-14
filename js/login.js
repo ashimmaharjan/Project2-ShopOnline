@@ -34,13 +34,12 @@ function testLogin() {
         document.querySelector(".snackbar-container").style.display = "flex";
         document.querySelector(".snackbar").style.backgroundColor = "red";
       } else {
-        // Parse response text as JSON to access customer ID and first name
         var response = JSON.parse(xhr.responseText);
         if (response.customerID && response.firstName) {
           // Store customer ID and first name in session storage
           sessionStorage.setItem("customerID", response.customerID);
           sessionStorage.setItem("firstName", response.firstName);
-          // Redirect to home page
+
           window.location.href = "home.htm";
         }
       }

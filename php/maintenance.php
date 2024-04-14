@@ -2,7 +2,6 @@
 
 header('Content-Type: text/xml');
 
-// Load XML file
 $xmlFile = '../../../data/auction.xml';
 $doc = new DOMDocument();
 $doc->preserveWhiteSpace = false;
@@ -61,7 +60,6 @@ function generateReport()
 {
     global $xmlFile;
 
-    // Check if the XML file exists
     if (!file_exists($xmlFile)) {
         http_response_code(404);
         echo "XML file not found.";
@@ -75,7 +73,6 @@ function generateReport()
     header('Content-Type: application/xml');
     echo $xmlContent;
 
-    // Remove sold or failed items
     removeSoldOrFailedItems();
 }
 
