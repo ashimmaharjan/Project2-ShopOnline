@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<items>
+  <item>
+    <ItemNumber>6614ae4ec9a80</ItemNumber>
+    <SellerID>660faae7e01f1</SellerID>
+    <ItemName>Samsung Galaxy Fold 4</ItemName>
+    <Category>Camera</Category>
+    <Description>The Galaxy Z Fold 4 has two screens: its 6.2-inch external cover display and its foldable 7.6-inch inner display featuring support for the S Pen Pro and the S Pen Fold Edition, with both running at 120 Hz and including support for variable refresh rate to help maximize power efficiency.</Description>
+    <StartPrice>1000</StartPrice>
+    <ReservePrice>1250.5</ReservePrice>
+    <BuyItNowPrice>1500.2</BuyItNowPrice>
+    <StartDate>2024-04-14</StartDate>
+    <StartTime>12:56:14</StartTime>
+    <Duration>8405</Duration>
+    <Status>in_progress</Status>
+    <LatestBid>
+      <BidderID>6614d1082bdb5</BidderID>
+      <CurrentBidPrice>1000</CurrentBidPrice>
+    </LatestBid>
+  </item>
+  <item>
+    <ItemNumber>6615b0988eee1</ItemNumber>
+    <SellerID>6614d1082bdb5</SellerID>
+    <ItemName>iPhone 13 Pro Max</ItemName>
+    <Category>Electronics</Category>
+    <Description>The iPhone 13 Pro Max features the powerful A15 Bionic chip, stunning Super Retina XDR display, Pro camera system with advanced low-light performance, and 5G capability for super-fast downloads and high-quality streaming.</Description>
+    <StartPrice>1099</StartPrice>
+    <ReservePrice>1200</ReservePrice>
+    <BuyItNowPrice>1499</BuyItNowPrice>
+    <StartDate>2024-04-14</StartDate>
+    <StartTime>10:30:00</StartTime>
+    <Duration>10080</Duration>
+    <Status>in_progress</Status>
+    <LatestBid>
+      <BidderID>660faae7e01f1</BidderID>
+      <CurrentBidPrice>1099</CurrentBidPrice>
+    </LatestBid>
+  </item>
+  <item>
+    <ItemNumber>6615b0988eell1</ItemNumber>
+    <SellerID>6614d1082bdb5</SellerID>
+    <ItemName>Samsung 65-Inch QLED TV</ItemName>
+    <Category>Home Entertainment</Category>
+    <Description>The Samsung 65-Inch QLED TV offers stunning picture quality with Quantum Dot technology, 4K resolution, and Dolby Vision support. It also features smart TV capabilities for streaming your favorite content.</Description>
+    <StartPrice>999</StartPrice>
+    <ReservePrice>1100</ReservePrice>
+    <BuyItNowPrice>1299</BuyItNowPrice>
+    <StartDate>2024-04-10</StartDate>
+    <StartTime>18:20:00</StartTime>
+    <Duration>4320</Duration>
+    <Status>in_progress</Status>
+    <LatestBid>
+      <BidderID>660faae7e01f1</BidderID>
+      <CurrentBidPrice>999</CurrentBidPrice>
+    </LatestBid>
+  </item>
+  <item>
+    <ItemNumber>6615b0988eepp1</ItemNumber>
+    <SellerID>6614d1082bdb5</SellerID>
+    <ItemName>MacBook Pro 2021</ItemName>
+    <Category>Computers</Category>
+    <Description>The MacBook Pro 2021 is equipped with the M1 Pro chip for blazing-fast performance, a stunning Liquid Retina XDR display, and up to 21 hours of battery life. It's the ultimate tool for creative professionals.</Description>
+    <StartPrice>1799</StartPrice>
+    <ReservePrice>2000</ReservePrice>
+    <BuyItNowPrice>2499</BuyItNowPrice>
+    <StartDate>2024-04-13</StartDate>
+    <StartTime>09:00:00</StartTime>
+    <Duration>20160</Duration>
+    <Status>in_progress</Status>
+    <LatestBid>
+      <BidderID>6615b8830913b</BidderID>
+      <CurrentBidPrice>1799</CurrentBidPrice>
+    </LatestBid>
+  </item>
+  <item>
+    <ItemNumber>6615b0988eekk1</ItemNumber>
+    <SellerID>660faae7e01f1</SellerID>
+    <ItemName>Sony PlayStation 5</ItemName>
+    <Category>Video Games</Category>
+    <Description>The Sony PlayStation 5 delivers lightning-fast loading times, ultra-high-speed SSD, ray tracing, and 3D audio, providing an immersive gaming experience like never before.</Description>
+    <StartPrice>499</StartPrice>
+    <ReservePrice>550</ReservePrice>
+    <BuyItNowPrice>649</BuyItNowPrice>
+    <StartDate>2024-04-14</StartDate>
+    <StartTime>15:45:00</StartTime>
+    <Duration>5440</Duration>
+    <Status>sold</Status>
+    <LatestBid>
+      <BidderID>6614d1082bdb5</BidderID>
+      <CurrentBidPrice>649</CurrentBidPrice>
+    </LatestBid>
+  </item>
+  <item>
+    <ItemNumber>6615b0988eemm1</ItemNumber>
+    <SellerID>6614d1082bdb5</SellerID>
+    <ItemName>GoPro HERO10 Black</ItemName>
+    <Category>Camera</Category>
+    <Description>The GoPro HERO10 Black captures stunning 5.3K video and 23MP photos, featuring HyperSmooth 4.0 stabilization, TimeWarp 3.0 for incredible time-lapse videos, and built-in mounting capabilities for versatile use.</Description>
+    <StartPrice>399</StartPrice>
+    <ReservePrice>450</ReservePrice>
+    <BuyItNowPrice>549</BuyItNowPrice>
+    <StartDate>2024-04-05</StartDate>
+    <StartTime>14:00:00</StartTime>
+    <Duration>7200</Duration>
+    <Status>in_progress</Status>
+    <LatestBid>
+      <BidderID>6615b8830913b</BidderID>
+      <CurrentBidPrice>399</CurrentBidPrice>
+    </LatestBid>
+  </item>
+</items>

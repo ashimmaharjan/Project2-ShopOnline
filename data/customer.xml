@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<customers>
+  <customer>
+    <CustomerID>660faae7e01f1</CustomerID>
+    <FirstName>Ashim</FirstName>
+    <LastName>Maharjan</LastName>
+    <Email>ashimmaharjan008@gmail.com</Email>
+    <Password>12345</Password>
+  </customer>
+  <customer>
+    <CustomerID>6614d1082bdb5</CustomerID>
+    <FirstName>Cifer</FirstName>
+    <LastName>Ulquiorra</LastName>
+    <Email>ciferulquiorra008@gmail.com</Email>
+    <Password>12345</Password>
+  </customer>
+</customers>
